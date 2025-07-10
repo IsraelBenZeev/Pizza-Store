@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
        fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
+        pizza: ['Roboto', 'sans-serif'],
       },
     },
   },

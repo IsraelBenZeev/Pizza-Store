@@ -13,6 +13,7 @@ export async function getMenu() {
 }
 
 export async function getOrder(id: string) {
+  console.log('enter to get order')
   const res = await fetch(`${API_URL}/order/${id}`);
   if (!res.ok) throw Error(`Couldn't find order #${id}`);
 
@@ -22,6 +23,7 @@ export async function getOrder(id: string) {
 }
 
 export async function createOrder(newOrder: OrderType) {
+  console.log('enter to create order')
   try {
     const res = await fetch(`${API_URL}/order`, {
       method: 'POST',
@@ -40,6 +42,7 @@ export async function createOrder(newOrder: OrderType) {
 }
 
 export async function updateOrder(id, updateObj) {
+  console.log('enter to update order')
   try {
     const res = await fetch(`${API_URL}/order/${id}`, {
       method: 'PATCH',

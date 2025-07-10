@@ -11,3 +11,4 @@ const store = configureStore({
 console.log('store: ', store);
 export default store;
 export type RootState = ReturnType<typeof store.getState>;
+export const dispatchAsync = store.dispatch;
